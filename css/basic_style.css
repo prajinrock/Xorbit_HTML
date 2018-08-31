@@ -1056,6 +1056,35 @@ c{
   padding-top: 30px !important;
   padding-bottom: 10px;
 }
+.big_frame{
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+}
+.big_bg{
+  background-color: #f1f1f1;
+}
+.pmk_controller{
+  width: 720px;
+}
+.pmk_title{
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+
 @media (min-width: 1366px) and (max-width: 1600px) {
   
   .search_box_1{

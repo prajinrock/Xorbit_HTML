@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>xorbit</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700" rel="stylesheet">
+<link rel="icon" href="images/favicon_xorbit.png" type="image/gif" sizes="16x16">
+<link rel="stylesheet" href="css/Google_MDL/material.min.css">
+<link rel="stylesheet" href="css/xorbit_style.css">
+<script src="css/Google_MDL/material.min.js"></script>
+</head>
+<style type="text/css">
+  .navbar-default{
+    background-image: none;
+  }
+</style>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="images/xorbit_logo.png" alt="Company Logo">
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Paymykart&trade;</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">DNA</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  <div class="bg_layer flexBox">
+    <div class="form_cover flexBox">
+      <div class="xor_title">“Be great at what you do”</div>
+      <div class="inpt_box">
+        <input type="text" class="bor_round" name="" placeholder="Email / Member ID / Mobile Number" id="user_id">
+        <div class="signing_arrow" id="signing_btn" title="Next">
+          <img src="images/sign_icon.png">
+        </div>
+        <input type="password" class="bor_round2" name="" placeholder="Password" id="user_pass">
+        <div class="signing_arrow" id="signing_btn_2" title="Sign In">
+          <img src="images/sign_icon.png">
+        </div>
+        <div class="sign_links">
+          <a href="">Forgot Password</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer_xor flexBox">
+    <div class="container flexBox">
+      <div class="foot_link">
+        <a href="#">Privacy Policy | </a>
+        <a href="#">Terms of Use | </a>
+        <a href="#">Disclaimer | </a>
+        <a href="#">Refund Policy | </a>
+        <a href="#">Grievance | </a>
+        <a href="#">Cookies</a>
+      </div>
+      <div class="foot_link">
+        <a href="">Copyright ©2017 www.xorbit.me</a>
+      </div>
+      <div class="foot_link">
+        <a href="#">Product designed & developedby ZCODEZ</a>
+      </div>
+    </div>
+  </div>
+  <div class="bottom_graphic">
+    <img src="images/xorb_bg.png">
+  </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#user_pass").hide();
+    $("#signing_btn_2").hide();
+    $("#signing_btn").click(function(){
+        $("#signing_btn").hide(300);
+        $("#user_pass").show(300);
+        $("#signing_btn_2").show(500);
+        $("#user_id").addClass('bor_id');
+        $("#user_id").removeClass('bor_round');
+        $("#user_pass").addClass('bor_pass');
+        $("#user_pass").removeClass('bor_round2');
+    });
+});
+</script>
+</body>
+</html>

@@ -10,6 +10,7 @@
 
 <link rel="icon" href="images/favicon_xorbit.png" type="image/gif" sizes="16x16">
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css">
 <link rel="stylesheet" href="css/Google_MDL/material.min.css">
 <link rel="stylesheet" href="css/basic_style.css">
 <link rel="stylesheet" href="css/xorbit_style.css">
@@ -65,16 +66,14 @@
             </div>
           </div>
           <div class="filtr_box">
-            <div></div>
-            <div>
-              <select>
-                <option>Retail Bonus</option>
-                <option>Team Bonus</option>
-                <option>Team Dev</option>
-                <option>Bonus</option>
-                <option>Royalty</option>
+            <div class="filtr_labl"></div>
+              <select id="multi-select-demo" multiple="multiple">
+                  <option value="Retail Bonus">Retail Bonus</option>
+                  <option value="Team Bonus">Team Bonus</option>
+                  <option value="Team Dev">Team Dev</option>
+                  <option value="Bonus">Bonus</option>
+                  <option value="Royalty">Royalty</option>
               </select>
-            </div>
           </div>
           <div class="al_right"><button class="filtr_btn">Apply</button></div>
         </div>
@@ -224,6 +223,7 @@
   
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
 <script>
 $(document).ready(function(){
     $("#photo_buttons").css("display","none");
@@ -246,6 +246,7 @@ $(document).ready(function(){
         $("#kyc_ttl, #kyc_dtls").css("display","flex");
         $("#personal_dtls, #nom_ttl, #nom_dtls, #bank_ttl, #bank_dtls").css("display","none");
     });
+    $('#multi-select-demo').multiselect();
 });
 </script>
 

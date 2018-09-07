@@ -166,7 +166,29 @@
 .navbar-default{
 	background-image: url(../images/bg_navbar.jpg);
 }
-
+.filtr_box select{
+  background-color: #f1f1f1;
+  border:none;
+  padding: 10px 15px;
+  font-size: 14px;
+  min-width: 260px;
+  border-radius: 3px;
+}
+.filtr_box .btn-default{
+  border:none;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+.filtr_box .btn-group.open .dropdown-toggle, .filtr_box .btn-default{
+  box-shadow: none;
+  background-color: #f1f1f1;
+}
+.filtr_box .dropdown-menu>.active>a, .filtr_box .dropdown-menu>.active>a:focus, .filtr_box .dropdown-menu>.active>a:hover{
+	background-color: #4551ff;
+}
+.filtr_box .multiselect-container>li>a>label{
+	padding: 5px 20px 5px 40px;
+}
 /*and (max-width: 1600px)*/
 @media (min-width: 1367px) {
 	.navbar-default .navbar-nav>li>a{
